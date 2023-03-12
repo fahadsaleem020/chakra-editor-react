@@ -1,0 +1,62 @@
+{
+  "name": "chakra-editor",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "vitebuild": "tsc && vite build",
+    "preview": "vite preview",
+    "build": "rollup -c && npm pack --dry-run"
+  },
+  "dependencies": {
+    "@chakra-editor/buttons": "^1.0.4",
+    "@chakra-editor/components": "^1.0.9",
+    "@chakra-editor/extensions": "^1.0.3",
+    "@chakra-editor/functions": "^1.1.10",
+    "@chakra-editor/hooks": "^1.0.7",
+    "@chakra-editor/provider": "^1.0.7",
+    "@chakra-editor/toolbar": "^1.0.4",
+    "@chakra-editor/types": "^1.0.15"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^2.4.9",
+    "@tiptap/react": "^2.0.0-beta.217",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@chakra-ui/react": "^2.4.9",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@tiptap/react": "^2.0.0-beta.217",
+    "@tiptap/starter-kit": "^2.0.0-beta.217",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "framer-motion": "^9.0.2",
+    "html-react-parser": "^3.0.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.19.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-node-externals": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-tsconfig-paths": "^4.0.5"
+  },
+  "files": [
+    "/lib",
+    "/README.md"
+  ],
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
