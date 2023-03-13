@@ -52,7 +52,7 @@
     "vite-tsconfig-paths": "^4.0.5"
   },
   "files": [
-    "index.ts",
+    "/lib",
     "/README.md"
   ],
   "module": "lib/index.esm.js",

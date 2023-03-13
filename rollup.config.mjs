@@ -23,6 +23,9 @@ export default defineConfig([
       externals(),
       typescript({
         tsconfig: "./tsconfig.json",
+        tsconfigOverride: {
+          exclude: ["src"],
+        },
       }),
     ],
   },
