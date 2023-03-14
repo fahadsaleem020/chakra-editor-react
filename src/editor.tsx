@@ -1,4 +1,4 @@
-import { Image, Video, Youtube, FontSize, TextIndent } from "@chakra-editor/extensions";
+import { ImageExtension, VideoExtension, YoutubeExtension, FontSizeExtension, TextIndentExtension } from "@chakra-editor/extensions";
 import { Toolbar } from "@chakra-editor/toolbar";
 import {
   YoutubeModal,
@@ -17,7 +17,7 @@ import starter from "@tiptap/starter-kit";
 import { Box } from "@chakra-ui/react";
 import parse from "html-react-parser"
 
-const extensions: Extensions = [starter, TextIndent, FontSize, Youtube, Image, Video];
+const extensions: Extensions = [starter, TextIndentExtension, FontSizeExtension, YoutubeExtension, ImageExtension, VideoExtension];
 
 function Editor() {
   const editor = useEditor({
