@@ -6,7 +6,7 @@ export * from "@chakra-editor/provider";
 export * from "@chakra-editor/buttons";
 export * from "@chakra-editor/toolbar";
 export { Editor } from "./src/editor";
-export {
+export type {
   YoutubeNodeAttibutes,
   VideoNodeAttibutes,
   ImageNodeAttibutes,

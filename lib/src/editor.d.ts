@@ -1,5 +1,3 @@
-import { EditorProps } from "@chakra-editor/types";
-import { FC } from "react";
-type EditorComponent = FC<EditorProps>;
+import { EditorComponent } from "@chakra-editor/types";
 declare const Editor: EditorComponent;
 export { Editor };
