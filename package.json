@@ -12,14 +12,14 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@chakra-editor/buttons": "^1.0.7",
-    "@chakra-editor/components": "^1.0.12",
-    "@chakra-editor/extensions": "^1.0.6",
-    "@chakra-editor/functions": "^1.1.12",
+    "@chakra-editor/buttons": "^1.0.8",
+    "@chakra-editor/components": "^1.0.13",
+    "@chakra-editor/extensions": "^1.0.8",
+    "@chakra-editor/functions": "^1.2.0",
     "@chakra-editor/hooks": "^1.0.9",
     "@chakra-editor/provider": "^1.0.10",
-    "@chakra-editor/toolbar": "^1.0.7",
-    "@chakra-editor/types": "^1.1.0"
+    "@chakra-editor/toolbar": "^1.0.10",
+    "@chakra-editor/types": "^1.2.0"
   },
   "peerDependencies": {
     "@chakra-ui/react": "^2.4.9",

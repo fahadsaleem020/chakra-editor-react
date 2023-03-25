@@ -1,0 +1,200 @@
+.ProseMirror {
+  outline: none;
+  padding: 12px;
+  /* preffered */
+  /* height: 20rem;  */
+  /* height: 50vmin; */
+}
+#tippy-1 {
+  background-color: yellow !important;
+  z-index: 2 !important;
+}
+.ProseMirror p {
+  font-size: 16px;
+  margin: 1.25rem 0;
+  font-weight: 400;
+  color: var(--chakra-colors-gray-600);
+}
+.ProseMirror .dragOverlay p {
+  color: white;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding: 0;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.ProseMirror ul li *,
+.ProseMirror ol li * {
+  margin: 1rem 0;
+}
+
+.ProseMirror h1 {
+  font-size: 32px;
+}
+.ProseMirror h2 {
+  font-size: 24px;
+}
+.ProseMirror h3 {
+  font-size: 18.72px;
+}
+.ProseMirror h4 {
+  font-size: 16px;
+}
+.ProseMirror h5 {
+  font-size: 13.28px;
+}
+.ProseMirror h6 {
+  font-size: 10.72px;
+}
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+  color: var(--chakra-colors-gray-700);
+  margin: 0.5em 0;
+  margin-top: 1.5em;
+}
+
+.ProseMirror a {
+  color: var(--chakra-colors-blue-500);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ProseMirror table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.ProseMirror table p {
+  margin: 0;
+}
+
+.ProseMirror table th,
+.ProseMirror table td {
+  position: relative;
+  border-right: 1px solid var(--chakra-colors-gray-400);
+  border-bottom: 1px solid var(--chakra-colors-gray-400);
+  box-sizing: border-box;
+  min-width: 1em;
+  padding: 3px 5px;
+  vertical-align: top;
+}
+
+.ProseMirror table tr th {
+  background-color: #f1f3f5;
+}
+
+.ProseMirror table tr th p {
+  font-weight: bolder;
+}
+
+.ProseMirror table tr:first-child th {
+  border-top: 1px solid var(--chakra-colors-gray-400);
+}
+
+.ProseMirror table tr:first-child th:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+.ProseMirror table tr th:first-child {
+  border-left: 1px solid var(--chakra-colors-gray-400);
+}
+
+.ProseMirror table tr td:first-child {
+  border-left: 1px solid var(--chakra-colors-gray-400);
+}
+
+.ProseMirror table tr:first-child td {
+  border-top: 1px solid var(--chakra-colors-gray-400);
+}
+
+.ProseMirror table tr:last-child td:first-child,
+.ProseMirror table tr:last-child th:first-child {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.ProseMirror table tr:last-child td:last-child {
+  border-bottom-right-radius: 0.5rem;
+}
+
+.ProseMirror table tr:first-child td:first-child {
+  border-top-left-radius: 0.5rem;
+}
+
+.ProseMirror table tr:first-child td:last-child,
+.ProseMirror table tr:first-child th:last-child {
+  border-top-right-radius: 0.5rem;
+}
+
+.ProseMirror .tableWrapper {
+  overflow-x: auto;
+}
+
+.ProseMirror .selectedCell:after {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 2;
+  background: var(--chakra-colors-blue-100);
+  filter: opacity(0.5);
+}
+
+.ProseMirror .column-resize-handle {
+  bottom: -2px;
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 4px;
+  background-color: var(--chakra-colors-blue-200);
+  cursor: col-resize;
+}
+
+.ProseMirror .resize-cursor {
+  cursor: col-resize;
+}
+
+.ProseMirror mark {
+  color: inherit;
+}
+
+.ProseMirror blockquote {
+  padding-left: 2rem;
+}
+
+.ProseMirror blockquote * {
+  border-left: 4px solid var(--chakra-colors-gray-500);
+  padding-left: 1rem;
+}
+
+.ProseMirror iframe,
+.ProseMirror img,
+.ProseMirror video {
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem !important;
+  margin-top: 1.5rem !important;
+}
+
+.imageNodeContainer,
+.youtubeNodeContainer,
+.videoNodeContainer {
+  position: relative;
+}
+
+.ProseMirror hr {
+  margin: 0.5rem 0;
+  border: 1px solid var(--chakra-colors-gray-400);
+}

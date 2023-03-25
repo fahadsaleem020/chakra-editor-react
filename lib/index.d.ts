@@ -6,3 +6,4 @@ export { useForm, useStorage, useTable } from "@chakra-editor/hooks";
 export * from "@chakra-editor/provider";
 export * from "@chakra-editor/toolbar";
 export * from "@chakra-editor/types";
+export { Editor } from "./src/editor";
