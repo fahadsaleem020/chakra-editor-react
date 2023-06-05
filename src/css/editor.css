@@ -2,9 +2,11 @@
   outline: none;
   padding: 12px;
   /* preffered */
-  /* height: 20rem;  */
+  /* height: 20rem; */
   /* height: 50vmin; */
+  transition: all 500ms ease;
 }
+
 #tippy-1 {
   background-color: yellow !important;
   z-index: 2 !important;

@@ -1,9 +1,13 @@
+import { useEditor, Extensions } from "@tiptap/react";
+import { Editor } from "@/components/editor";
+import starter from "@tiptap/starter-kit";
+import { Box } from "@chakra-ui/react";
 import {
+  TextIndentExtension,
+  FontSizeExtension,
+  YoutubeExtension,
   ImageExtension,
   VideoExtension,
-  YoutubeExtension,
-  FontSizeExtension,
-  TextIndentExtension,
 } from "@chakra-editor/extensions";
 import {
   YoutubeModal,
@@ -11,18 +15,14 @@ import {
   VideoModal,
   Loader,
 } from "@chakra-editor/components";
-import { useEditor, Extensions, EditorContent } from "@tiptap/react";
-import starter from "@tiptap/starter-kit";
-import { Box } from "@chakra-ui/react";
-import { Editor } from "@/editor";
 
 const extensions: Extensions = [
-  starter,
   TextIndentExtension,
   FontSizeExtension,
   YoutubeExtension,
   ImageExtension,
   VideoExtension,
+  starter,
 ];
 
 function App() {
@@ -42,25 +42,24 @@ function App() {
         editor={editor}
         toolbarProps={{
           buttons: [
+            "heading",
             "bold",
             "italic",
             "underline",
-            "heading",
             "table",
             ["image", "youtube", "video", "undo", "redo", { ml: "auto" }],
           ],
+          className: "toolbar",
         }}
         maxW="2xl"
         mx="auto"
         shadow="xl"
         rounded="xl"
       >
-        <ImageModal editor={editor} />
         <YoutubeModal editor={editor} />
+        <ImageModal editor={editor} />
         <VideoModal editor={editor} />
       </Editor>
-
-      <EditorContent editor={editor} />
     </Box>
   );
 }
@@ -68,24 +67,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Box className="ProseMirror">
-    <Watch extensions={extensions}>
-      {({ type, content, attrs }) => {
-        switch (type) {
-          case "heading":
-            return (
-              <Heading as={`h${attrs?.level}` as any}>
-                {parse(generateHTML(content, extensions))}
-              </Heading>
-            );
-          case "paragraph":
-            return <p>{parse(generateHTML(content, extensions))}</p>;
-          case "image":
-            return <img {...attrs} />;
-        }
-      }}
-    </Watch>
-  </Box> */
-}

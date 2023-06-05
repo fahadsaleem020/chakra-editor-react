@@ -13,23 +13,23 @@
   },
   "dependencies": {
     "@chakra-editor/buttons": "^1.0.8",
-    "@chakra-editor/components": "^1.0.13",
+    "@chakra-editor/components": "^1.1.0",
     "@chakra-editor/extensions": "^1.0.8",
     "@chakra-editor/functions": "^1.2.0",
     "@chakra-editor/hooks": "^1.0.9",
     "@chakra-editor/provider": "^1.0.10",
     "@chakra-editor/toolbar": "^1.0.10",
-    "@chakra-editor/types": "^1.2.0"
+    "@chakra-editor/types": "^1.3.0"
   },
   "peerDependencies": {
-    "@chakra-ui/react": "^2.4.9",
+    "@chakra-ui/react": "^2.7.0",
     "@tiptap/react": "^2.0.0-beta.217",
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@chakra-ui/react": "^2.4.9",
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@chakra-ui/react": "^2.7.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
     "@tiptap/react": "^2.0.0-beta.217",
@@ -38,7 +38,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
     "cz-conventional-changelog": "^3.3.0",
-    "framer-motion": "^9.0.2",
+    "framer-motion": "^10.12.16",
     "html-react-parser": "^3.0.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
