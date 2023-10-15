@@ -28,7 +28,7 @@ const extensions: Extensions = [
 function App() {
   const editor = useEditor({
     extensions: extensions,
-    autofocus: true,
+    autofocus: "start",
     onUpdate({ editor }) {
       localStorage.setItem("content", editor.getHTML());
     },
